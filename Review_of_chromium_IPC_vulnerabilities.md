@@ -11,7 +11,7 @@
 - [Chromium IPC 인터페이스](#chromium-ipc-인터페이스)   
   * [Main channels for IPC](#main-channels-for-ipc)   
   * [Mojo 인터페이스](#mojo-인터페이스)   
-    + [Ways to fuzz/test Mojo IPC interfaces](#ways-to-fuzz/test-mojo-ipc-interfaces)   
+    + [Ways to fuzz/test Mojo IPC interfaces](#ways-to-fuzztest-mojo-ipc-interfaces)   
     + [Way 1)](#way-1)   
     + [Way 2)](#way-2)   
   * [Old IPC 인터페이스](#old-ipc-인터페이스)   
