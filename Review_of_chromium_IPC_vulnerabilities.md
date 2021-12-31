@@ -4,9 +4,9 @@
 
 ---
 # 목차
-- [이 글의 핵심 사항](#-이-글의-핵심-사항:)   
+- [이 글의 핵심 사항](#-이-글의-핵심-사항)   
 - [Chromium 멀티프로세스 구조](#-chromium-멀티프로세스-구조)   
-  * [멀티프로세스 구조의 특징과 이점](#-멀티프로세스-구조의-특징과-이점:)   
+  * [멀티프로세스 구조의 특징과 이점](#-멀티프로세스-구조의-특징과-이점)   
   * [프로세스의 분류](#-프로세스의-분류:)   
 - [Chromium IPC 인터페이스](#-chromium-ipc-인터페이스)   
   * [Main channels for IPC](#-main-channels-for-ipc)   
@@ -16,11 +16,11 @@
     + [Way 2)](#-way-2)   
   * [Old IPC 인터페이스](#-old-ipc-인터페이스)   
 - [기존 버그 분석](#-기존-버그-분석)   
-  * [Category 1: raw pointer 필드를 비정상적으로 관리한 경우](#-category-1:-raw-pointer-필드를-비정상적으로-관리한-경우)   
+  * [Category 1: raw pointer 필드를 비정상적으로 관리한 경우](#-category-1-raw-pointer-필드를-비정상적으로-관리한-경우)   
     + [1. raw pointer가 owner를 가리키는 경우](#-1-raw-pointer가-owner를-가리키는-경우)   
     + [2. raw pointer 클래스의 소멸자가 그 자신의 reference를 없애버리는 경우](#-2-raw-pointer-클래스의-소멸자가-그-자신의-reference를-없애버리는-경우)   
-  * [Category 2: 콜백을 저장하는 raw pointer](#-category-2:-콜백을-저장하는-raw-pointer)   
-  * [Category 3: RenderFrameHost 수명 문제](#-category-3:-renderframeHost-수명-문제)   
+  * [Category 2: 콜백을 저장하는 raw pointer](#-category-2-콜백을-저장하는-raw-pointer)   
+  * [Category 3: RenderFrameHost 수명 문제](#-category-3-renderframeHost-수명-문제)   
 - [결론](#-결론)
 ---
 
